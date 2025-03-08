@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Home from "./components/Home";
 
 function App() {
     const [message, setMessage] = useState("");
@@ -15,8 +16,8 @@ function App() {
 
     return (
         <div>
-            <h1>React + Django Homepage</h1>
-            <p>{message}</p>
+          <Home />
+
         </div>
     );
 }
