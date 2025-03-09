@@ -1,0 +1,308 @@
+
+.all-container {
+  padding-top: 100px;
+  width: 80%;
+
+}
+
+
+.profile {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 12px 12px 20px 1px rgb(244, 244, 183);
+}
+
+.profile-pic, .sns {
+  width: 100%;
+}
+
+
+
+.introduction {
+  width: 1000px;
+  text-align: center;
+}
+
+html, body {
+  background-color: rgb(3, 10, 26)!important;
+  font-family: "Carme", sans-serif;
+}
+
+.upper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 100px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 430px) {
+  .upper-container {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.title {
+  text-align: left;
+  color:white;
+  width:100%;
+  font: bold;
+  font-size: 90px;
+  flex-wrap: wrap;
+
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+.title h1 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.left-container {
+  width:40%;
+  margin-top:10px;
+  margin-right:10px;
+}
+
+.right-container {
+  width: 60%;
+  margin-top:10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  .right-container {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+}
+
+.description {
+  color: white;
+  position: relative;
+  padding-top: 3rem;
+  padding: 1rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+
+.link{
+  color:rgb(250, 250, 136);
+}
+.description::before,
+.description::after {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    content: '';
+}
+
+.description::before {
+    border-left: solid 3px;
+    border-top: solid 3px;
+    top: 0;
+    left: 0;
+}
+
+.description::after {
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    bottom: 0;
+    right: 0;
+}
+
+.resume {
+  color:white;
+}
+
+.nav-link {
+  background-color:#bbb;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.tab_contents_item{
+  display:none;
+}
+
+
+.tab_contents_item.active{
+  display:block;
+}
+
+.fa-brands {
+  color:white;
+  font-size: 40px;
+  margin: 10px;
+}
+
+
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+ .project-text {
+  color:white;
+  margin-top: 50px;
+ }
+ .title {
+  -webkit-text-stroke: 1px #fbfadc;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1vw;
+  text-align: center;
+  color: white;
+  /* background: url('tokyotower.jpg') center center/cover, rgb(3, 10, 26); */
+  background-size: auto 200%;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+   }
+   @keyframes shine {
+     from {
+       background-position: center 0;
+     }
+     to {
+       background-position: center 200%;
+     }
+   }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .menu-1, .menu-2, .menu-3, .menu-4 {
+    color:white;
+    margin: 10px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+
+.menu a {
+	color: rgb(250, 250, 249);
+
+	transition: 1s;
+}
+.menu a:hover {
+	text-shadow:
+		0 0 7px #fff,
+		0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 40px #eff8af,
+		0 0 80px #eff8af,
+		0 0 90px #eff8af
+}
+
+
+.certificate-list {
+  padding-top: 50px;
+}
+  .certificate-text {
+    border-color: white;
+  }
+
+
+  .project-text, .certificate-text, .contact-title, .career-text {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
+
+
+  /* Flickering animation */
+  @keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(234, 247, 132),
+        0 0 80px rgb(234, 247, 132),
+        0 0 90px rgb(234, 247, 132),
+        0 0 100px rgb(234, 247, 132),
+        0 0 150px rgb(234, 247, 132);
+
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+  }
+
+  .career-text {
+    color:white;
+    margin-bottom: 50px;
+
+  }
+
+  .tab-content {
+    color: white;
+  }
+
+  .tab-content > ul {
+    list-style: none;
+
+  }
+
+  .career-time {
+    color: rgb(250, 250, 136);
+    font-size: 1.6rem;
+  }
+
+  .career {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+
+.form-btn {
+  background-color: rgb(250, 250, 249);
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  outline: none;
+  transition: all .3s;
+}
+
+
+
+  .form-btn:hover {
+    top:-3px;
+    box-shadow: 0px 0px 10px rgb(248, 248, 179);
+  background-color:rgb(250, 250, 249) ;
+  }
+
+  textarea {
+    width: 100%;
+    border-radius:var(--bs-border-radius);
+  }
