@@ -22,13 +22,13 @@ function Home() {
         </div>
         <div className="row">
           <div className="upper-container">
-            
-            <div
+
+            {/* <div
               className="right-container"
               data-profile-target="profileText"
               data-link-url="https://www.lewagon.com/"
               data-link-text="Le Wagon"
-            >
+            > */}
               <p
                 className="description"
                 data-action="mouseover->profile#showMore"
@@ -44,7 +44,7 @@ function Home() {
                 management and engineering. No code, no life! 💻
               </p>
             </div>
-          </div>
+          {/* </div> */}
           <div className="bottom-container">
 
           </div>
