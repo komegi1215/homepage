@@ -6,7 +6,6 @@ function Home() {
   return (
     <div>
       <div className="container-fluid all-container" data-controller="profile">
-        <h1 className="title">Megumi Mizuno</h1>
         <div className="menu">
           <a href="#portfolio" className="menu-1">
             Projects
@@ -23,11 +22,7 @@ function Home() {
         </div>
         <div className="row">
           <div className="upper-container">
-            <div className="col-lg-3 col-md-4 left-container justify-content-center introduction col-3">
-              <div className="profile-pic">
-                {/* <%= image_tag "meg.jpeg", className: "profile" %> */}
-              </div>
-            </div>
+            
             <div
               className="right-container"
               data-profile-target="profileText"
@@ -51,24 +46,7 @@ function Home() {
             </div>
           </div>
           <div className="bottom-container">
-            <div className="portfolio" id="portfolio">
-              <h1 className="project-text">Projects</h1>
-              {/* <%= render "contacts/portfolio" %> */}
-            </div>
-            <div className="career" id="career">
-              <h1 className="career-text">Career</h1>
-              {/* <%= render "contacts/career" %> */}
-            </div>
-            <div className="certificate-list" id="certificate-list">
-              <h1 className="certificate-text">Skills and Certificates</h1>
-              {/* <%= render "contacts/badge" %> */}
-            </div>
-            <h1 className="contact-title">Contact Me -currently unavailable</h1>
-            <div
-              className="contact-container"
-              id="contact-container"
-              style={{ marginTop: "50px" }}
-            ></div>
+
           </div>
         </div>
       </div>
