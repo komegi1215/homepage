@@ -1,49 +1,25 @@
-// import logo from './logo.svg';
-// import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-import { useEffect, useState } from "react";
-import axios from "axios";
-import Home from "./components/Home";
 
-function App() {
-    const [message, setMessage] = useState("");
 
-    useEffect(() => {
-      axios.get("http://localhost:8001/api/")  // Use "localhost" instead of "127.0.0.1"
-          .then(response => setMessage(response.data.message))
-          .catch(error => console.error("Error fetching API:", error));
-  }, []);
-
-    return (
-        <div>
-          <Home />
-
+const App = () => {
+  return (
+    <div className="min-h-screen bg-[#0A0A0A] text-gray-200 font-sans flex items-center justify-center p-4 sm:p-6 md:p-8">
+      <div className="w-full max-w-6xl mx-auto bg-[#111214] rounded-2xl shadow-2xl shadow-black/30 overflow-hidden">
+        <div className="p-6 sm:p-8 md:p-12 space-y-16 md:space-y-24">
+          <Header />
+          <Hero />
+          <Projects />
+          <Contact />
+          <Footer />
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default App;
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;

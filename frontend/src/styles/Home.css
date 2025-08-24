@@ -1,6 +1,6 @@
 
 .all-container {
-  padding-top: 100px;
+  padding-top: 10px;
   width: auto;
   margin: 10px;
 
@@ -40,7 +40,24 @@ html, body {
   padding-top: 100px;
   margin-bottom: 40px;
   background-image: url("../../public/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
+.upper-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+}
+
+.upper-container * {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 430px) {
@@ -209,7 +226,8 @@ html, body {
   .menu-1, .menu-2, .menu-3, .menu-4 {
     color:rgb(0, 6, 16);
     margin: 10px;
-    font-size: 24px;
+    font-size: 16px;
+    font-weight:lighter;
     text-decoration: none;
   }
 
