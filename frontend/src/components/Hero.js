@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-tight">
           Marketing Engineer & Business automation specialist
         </h1>
-        <p className="text-lg text-gray-400 max-w-xl">
+        <p className="text-lg text-gray-400 max-w-xl italic">
           Enabling smooth cross-platform automation across fragmented marketing and business processes.
         </p>
       </div>
